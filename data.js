@@ -1,18 +1,18 @@
 export const projectsimages = [
     {
-        image: "./images/project2.jpg",
+        image: "./Images/project2.jpg",
         title: "FrontEnd Master",
     },
     {
-        image: "./images/project4.jpg",
+        image: "./Images/project4.jpg",
         title: "Ragnarok Inc.",
     },
     {
-        image: "./images/project3.bmp",
+        image: "./Images/project3.bmp",
         title: "FitExpert App",
     },
     {
-        image: "./images/project1.jpg",
+        image: "./Images/project1.jpg",
         title: "Programming Hacks",
     },
 ];
