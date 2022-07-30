@@ -1,0 +1,100 @@
+.skills {
+padding: 5rem 0;
+background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./Assets/Images/cmd.jpg") center/cover no-repeat;
+width: 100%;
+min-height: 100vh;
+font-family: monospace;
+margin-top: 5rem;
+border: 1px solid var(--dark-color);
+}
+
+.skills-title {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    opacity: 0.8;
+    font-weight: 100;
+}
+
+.skills h2 {
+    padding: 3rem 0;
+    width: 100%;
+    font-size: 2rem;
+    opacity: 0.7;
+    font-weight: 100;
+}
+
+.skills-list {
+    display: flex;
+    text-align: left;
+    opacity: 0.8;
+    font-size: 1.6rem;
+}
+
+@media (max-width:560px) {
+    .skills {
+        height: 100%;
+    }
+
+    .skills h1 {
+        font-size: 2.5rem;
+    }
+    .skills h2 {
+        font-size: 1.7rem;
+    }
+    .skills-list {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:420px) {
+    .skills h1 {
+        font-size: 2rem;
+    }
+    .skills h2 {
+        font-size: 1.4rem;
+    }
+    .skills-list {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:322px) {
+    .skills h1 {
+        font-size: 1.7rem;
+    }
+    .skills h2 {
+        font-size: 1.1rem;
+    }
+    .skills-list {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

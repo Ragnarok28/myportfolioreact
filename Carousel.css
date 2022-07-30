@@ -1,0 +1,177 @@
+.carousel {
+    display: flex;
+    height: 400px;
+    max-height: 100%;
+    max-width: 100%;
+    width: 800px;
+}
+
+.carousel_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel_card {
+    display: flex;
+    flex: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(.8);
+    transition: 0.5s ease-in-out;
+}
+
+.carousel_card-active {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: visible;
+}
+
+.card_image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card_overlay {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(43, 42, 42, 0.76);
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_title {
+    color: transparent;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.carousel_arrow_left, .carousel_arrow_right {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 700;
+    top: 50%;
+    color: var(--dark-color);
+    background-color: var(--brown-color);
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding-bottom: 9px;
+    cursor: pointer;
+}
+
+.carousel_arrow_left:hover, .carousel_arrow_right:hover {
+    background-color: var(--light-grey-color);
+    transition: 0.5s ease-in-out;
+}
+
+.carousel_arrow_left {
+    left: 15px;
+    padding-right: 3px;
+}
+
+.carousel_arrow_right {
+    right: 15px;
+    padding-left: 3px;
+}
+
+.carousel_pagination {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.pagination_dot {
+    height: 12px;
+    width: 12px;
+    background-color: var(--grey-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.pagination_dot:hover {
+    transform: scale(1.2);
+}
+
+.pagination_dot-active {
+    background-color: #eee;
+}
+
+@media (max-width: 830px) {
+    .carousel_card {
+        border-radius: 0;
+        -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .carousel {
+        background-color: transparent;
+    }
+}
+@media (max-width: 730px) {
+    .carousel {
+        height: 300px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 688px) {
+    .carousel {
+        height: 260px;
+        width: 520px;
+        margin: 3.2rem 0;
+    }
+
+    .carousel_card {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        height: 230px;
+        width: 460px;
+    }
+    .carousel_pagination {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .carousel {
+        height: 200px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 360px) {
+    .carousel {
+        height: 170px;
+        width: 340px;
+    }
+}
+
+
+
+
+
